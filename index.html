@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professionelle Handyreparatur in Köln - Schnell, zuverlässig und günstig">
+    <title>Handyreparatur Köln - Ihr Spezialist für Smartphone-Reparaturen</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1579412690850-bd41cd0af56d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        .services {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-us {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 5px;
+            min-width: 250px;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        .whatsapp-btn i {
+            margin-right: 0.5rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Köln Handyreparatur</div>
+            <ul class="nav-links">
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#about">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Professionelle Handyreparatur in Köln</h1>
+        <p>Schnell, zuverlässig und günstig. Wir reparieren Ihr Smartphone noch am selben Tag.</p>
+        <a href="#contact" class="btn">Kontakt aufnehmen</a>
+    </section>
+    
+    <section id="services" class="services">
+        <h2 class="section-title">Unsere Leistungen</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Display Reparatur</h3>
+                <p>Schnelle und professionelle Reparatur von gebrochenen oder defekten Displays für alle Smartphone-Modelle.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-battery-full"></i>
+                <h3>Akku Austausch</h3>
+                <p>Verlängern Sie die Lebensdauer Ihres Geräts mit einem neuen Akku. Austausch innerhalb von 30 Minuten.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tint"></i>
+                <h3>Wasserschaden Behebung</h3>
+                <p>Rettung und Reparatur von Geräten mit Wasserschäden. Schnelle Reaktion erhöht die Erfolgsaussichten.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-camera"></i>
+                <h3>Kamera Reparatur</h3>
+                <p>Professionelle Reparatur für defekte Front- und Rückkameras aller Smartphone-Modelle.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Ladebuchse Reparatur</h3>
+                <p>Behebung von Ladeproblemen und Austausch defekter Ladebuchsen für alle gängigen Geräte.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Mainboard Reparatur</h3>
+                <p>Spezialisierte Dienstleistung für komplexe Probleme auf Mainboard-Ebene. Von Experten durchgeführt.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-us">
+        <div class="contact-info">
+            <h2 class="section-title" style="color: white;">Kontaktieren Sie uns</h2>
+            <p>Für Fragen, Kostenvoranschläge oder Terminvereinbarungen stehen wir Ihnen gerne zur Verfügung.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>Adresse</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Montag - Freitag: 10:00 - 19:00 Uhr<br>
+                    Samstag: 10:00 - 16:00 Uhr<br>
+                    Sonntag: Geschlossen</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Kontakt</h3>
+                    <p>Schreiben Sie uns auf WhatsApp:</p>
+                    <a href="https://wa.me/491733698233" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="services">
+        <h2 class="section-title">Über uns</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+            Wir sind ein erfahrenes Team von Smartphone-Technikern, das sich auf die schnelle und zuverlässige Reparatur von Mobilgeräten spezialisiert hat. Mit mehr als 10 Jahren Erfahrung in der Branche bieten wir qualitativ hochwertige Reparaturen zu fairen Preisen. Unser Ziel ist es, Ihnen zu helfen, Ihre Geräte länger zu nutzen und so Ressourcen zu schonen.
+        </p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Köln Handyreparatur - Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html> 
